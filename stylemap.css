@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+  color: #00695c;
+  text-align: center;
+}
+
+header {
+  background-color: #004d40;
+  color: white;
+  padding: 20px;
+}
+
+#map-container {
+  margin: 20px auto;
+  width: 80%;
+}
+
+#india-map {
+  width: 100%;
+  cursor: pointer;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  background-color: #f9f9f9;
+}
+
+
+
+section {
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid #004d40;
+  border-radius: 10px;
+  background-color: #b2dfdb;
+}
+
+/* Footer styling */
+footer {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+#footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer p {
+  font-size: 0.8em; /* Smaller text */
+  margin: 5px 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+
+.social-links img {
+  width: 24px; /* Adjust icon size */
+  transition: transform 0.2s; /* Animation on hover */
+}
+
+.social-links a:hover img {
+  transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+button {
+  background-color: #ff9800; /* Orange button */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Animation on hover */
+}
+
+button:hover {
+  background-color: #ff5722; /* Darker orange on hover */
+}
+/* General Map Styling */
+#india-map path {
+  fill: #4caf50; /* Default green color for states */
+  stroke: #ffffff; /* White stroke for clear borders */
+  transition: fill 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Interactive Hover Effect */
+#india-map path:hover {
+  fill: #388e3c; /* Darker green on hover */
+  cursor: pointer;
+}
+
+/* Blue for water-abundant states */
+#IN-AR { fill: #64b5f6; } /* Arunachal Pradesh */
+#IN-UK { fill: #64b5f6; } /* Uttarakhand */
+#IN-SK { fill: #64b5f6; } /* Sikkim */
+#IN-MN { fill: #64b5f6; } /* Manipur */
+#IN-MZ { fill: #64b5f6; } /* Mizoram */
+#IN-NL { fill: #ffd54f; } /* Nagaland */
+#IN-TR { fill: #64b5f6; } /* Tripura */
+
+/* Yellow for moderate water scarcity */
+#IN-AS { fill: #64b5f6; } /* Assam */
+#IN-GJ { fill: #ffd54f; } /* Gujarat */
+#IN-MH { fill: #e57373; } /* Maharashtra */
+#IN-KA { fill: #e57373; } /* Karnataka */
+#IN-OR { fill: #ffd54f; } /* Odisha */
+#IN-KL { fill: #ffd54f; } /* Kerala */
+#IN-HP { fill: #64b5f6; } /* Himachal Pradesh */
+#IN-WB { fill: #ffd54f; } /* West Bengal */
+#IN-CH { fill: #e57373; } /* Chandigarh */
+#IN-CH { fill: #ffd54f; } /* Chandigarh */
+#IN-JK { fill: #ffd54f;  } /* Jammu and Kashmir */
+#IN-ML { fill: #64b5f6;}/* maghalya*/
+#IN-DL { fill: #e57373;}/*delhi*/
+#IN-UT { fill: #64b5f6;}/*uk*/
+
+/* Red for severe water scarcity */
+#IN-RJ { fill: #e57373; } /* Rajasthan */
+#IN-TN { fill: #e57373; } /* Tamil Nadu */
+#IN-PB { fill: #e57373; } /* Punjab */
+#IN-UP { fill: #ffd54f; } /* Uttar Pradesh */
+#IN-BR { fill: #ffd54f; } /* Bihar */
+#IN-HR { fill: #e57373; } /* Haryana */
+#IN-MP { fill: #ffd54f; } /* Madhya Pradesh */
+#IN-JH { fill: #ffd54f; } /* Jharkhand */
+#IN-TG { fill: #e57373; } /* Telangana */
+
+/* Other regions */
+#IN-AN { fill: #64b5f6; } /* Andaman and Nicobar Islands */
+#IN-CT { fill: #ffd54f; } /* Chhattisgarh */
+#IN-GA { fill: #ffd54f; } /* Goa */
+#IN-LD { fill: #ffd54f; } /* Lakshadweep */
+#IN-DN { fill: #ffd54f; } /* Dadra and Nagar Haveli */
+#IN-DD { fill: #ffd54f; } /* Daman and Diu */
+#IN-PY { fill: #ffd54f; } /* Puducherry */
+#IN-AP { fill: #e57373; } /* Andhra Pradesh */
+
+/* General styling for map */
+#india-map path {
+  stroke: #ffffff;
+  transition: fill 0.3s ease;
+}
+
+#india-map path:hover {
+  fill: #333; /* Hover effect with a darker color */
+  cursor: pointer;
+}
+
+/* State Borders */
+path {
+  stroke: #333;          /* Border color for states */
+  stroke-width: 1;       /* Thickness of the border */
+  fill-opacity: 1;       /* Ensures the fill color remains visible */
+  transition: fill 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Example Hover Effect (Optional) */
+path:hover {
+  stroke-width: 2;       /* Slightly thicker border on hover */
+}
+
+
